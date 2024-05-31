@@ -1,0 +1,565 @@
+/*body {
+    font-family: serif;
+    background:url('photos_2/background.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 30px auto;
+    background-color:#1014575d;
+    padding: 30px;
+    border: 1px solid #ccc;
+    
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+   
+   color: rgb(0, 0, 0);
+    margin: 2px 2px;
+    box-shadow: 2px 2px 2px black;
+    
+}
+
+.form-group {
+    margin-bottom: 20px;
+    border: 1px solid rgba(71, 71, 71, 0.308);
+    padding: 5px;
+    background-color: #ffffff73;
+    border-radius: 3px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #000000c7;
+    
+    font-size: x-large;
+    font-weight: bolder;
+    padding: 2px;
+    
+    font-family: serif;
+    
+    
+}
+.text-label{
+    font-size: larger;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(78, 30, 30);
+    
+}
+input[type='checkbox']{
+    appearance: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #5a5858 ;
+    display: inline-block;
+    position: relative;
+    transition: 0.3s all ease-in-out;
+    
+}
+input[type="checkbox"]::before{
+    position: absolute;
+    font-size: 50px;
+    color: white;
+    transform: scale(0);
+    transition: 0.3s all ease-in-out;
+}
+input[type="checkbox"]:checked:before{
+    transform: scale(1);
+}
+input[type="checkbox"]:checked{
+    background-color: rgb(89, 0, 255);
+    box-shadow: 1px 1px 2px black;
+}
+input[type='radio'] {
+    appearance: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #5a5858;
+    display: inline-block;
+    position: relative;
+    transition: 0.3s all ease-in-out;
+    margin-right: 10px;
+}
+input[type="radio"]::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 0.3s all ease-in-out;
+}
+input[type="radio"]:checked::before {
+    background-color: rgb(89, 0, 255);
+    transform: translate(-50%, -50%) scale(1);
+}
+input[type="radio"]:checked {
+    background-color: #fff;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #00000057;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #ffffff;
+    margin-top: 6px;
+    font-weight: 700;
+    transition: border-color 0.3s ease;
+    background-color: transparent;
+    
+}
+textarea {
+    height: 50px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+input[type="file"] {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #555;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    label {
+        font-size: 1rem;
+    }
+
+    .text-label {
+        font-size: 1rem;
+    }
+
+    input[type='checkbox'], input[type='radio'] {
+        width: 20px;
+        height: 20px;
+    }
+
+    input[type="checkbox"]::before, input[type="radio"]::before {
+        width: 12px;
+        height: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 15px;
+        margin: 15px auto;
+    }
+
+    label {
+        font-size: 0.875rem;
+    }
+
+    .text-label {
+        font-size: 0.875rem;
+    }
+
+    input[type='checkbox'], input[type='radio'] {
+        width: 18px;
+        height: 18px;
+    }
+
+    input[type="checkbox"]::before, input[type="radio"]::before {
+        width: 10px;
+        height: 10px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 12px 16px;
+    }
+}*/
+/*
+body {
+    font-family: 'Work Sans', sans-serif;
+    background-color: #f7f8fa;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="tel"],
+input[type="email"],
+input[type="file"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #181b20fb;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.text-label {
+    font-size: 24px;
+    color: #555;
+    
+
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+*/
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f7f8fa;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-weight: 600;
+    margin-top: 20px;
+    animation: fadeInDown 1s ease-out;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease-out;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="tel"],
+input[type="email"],
+input[type="file"],
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+input[type="file"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    display: none;
+}
+
+.text-label {
+    font-size: 14px;
+    color: #555;
+    cursor: pointer;
+    display: inline-block;
+    padding-left: 30px;
+    position: relative;
+    
+}
+
+.text-label:before {
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+input[type="checkbox"]:checked + .text-label:before,
+input[type="radio"]:checked + .text-label:before {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+.card-group {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.card-label {
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    max-width: 120px;
+    margin: 0 auto;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.card-content {
+    font-size: 16px;
+    font-weight: 500;
+    color: #555;
+}
+
+.card-image {
+    max-width: 100%;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked + .card-label .card {
+    border-color: #007bff;
+    background-color: #f0f8ff;
+}
+input[type="date"]{
+    background-color: #1f2429;
+    padding: 5px;
+  
+   
+    font-family: "Roboto Mono",monospace;
+    color: #ffffff;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+::-webkit-calendar-picker-indicator{
+    background-color: #ffffff;
+    padding: 2px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.card:hover {
+    transform: scale(1.05);
+    border-color: #007bff;
+}
+
+.card:hover .card-content {
+    color: #007bff;
+}
+
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="tel"],
+    input[type="email"],
+    input[type="file"],
+    textarea,
+    select {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="tel"],
+    input[type="email"],
+    input[type="file"],
+    textarea,
+    select {
+        font-size: 12px;
+    }
+
+    .card-image {
+        height: 60px;
+    }
+}

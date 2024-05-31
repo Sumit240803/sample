@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutor Registration Form</title>
+    <link rel="stylesheet" href="/css/educator.css">
+    
+   
+    <script defer src="/js/educator.js"></script>
+</head>
+<body>
+    <h1>Teacher Registration Form</h1>
+    <form id="registration-form" class="container" action="/submit" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter Your Full Name" required>
+        </div>
+        <div class="form-group" id="gender-id">
+            <div class="card-group">
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+                <label class="card-label" for="male">
+                    <div class="card">
+                        <div class="card-content">
+                            <img src=".././photos_2/male.jpg" alt="male" class="card-image">
+                            Male
+                        </div>
+                    </div>
+                </label>
+            <input type="radio" id="female" name="gender" value="female" required>
+                <label class="card-label" for="female">
+                    <div class="card">
+                        <div class="card-content">
+                            <img src=".././photos_2/female.jpg" alt="female" class="card-image">
+                            Female
+                        </div>
+                    </div>
+                </label>
+            <input type="radio" id="other" name="gender" value="other" required>
+                <label class="card-label" for="other">
+                    <div class="card">
+                        <div class="card-content">
+                            <img src=".././../photos_2/other.png" alt="other" class="card-image">
+                            Other
+                        </div>
+                    </div>
+                </label>
+            </div>
+            
+        </div>
+        <div class="form-group" id="other-gender" style="display: none;">
+        <label for="gender">Other : </label>
+        <input type="text" id="other" name="gender" >
+        </div>
+        <div class="form-group">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+
+
+
+        <div class="form-group">
+           <div class="card-group">
+            <label for="relationship">Relationship Status</label>
+            <input type="radio" id="single" name="relationship" value="single" required>
+                <label class="card-label" for="single">
+                    <div class="card">
+                        <div class="card-content">
+                            <img src=".././photos_2/man-standing.jpg" alt="single" class="card-image">
+                            Single
+                        </div>
+                    </div>
+                </label>
+            <input type="radio" id="married" name="relationship" value="married" required>
+                <label class="card-label" for="married">
+                    <div class="card">
+                        <div class="card-content">
+                            <img src=".././photos_2/married.jpg" alt="married" class="card-image">
+                            Married
+                        </div>
+                    </div>
+                </label>
+           </div>
+    </div>
+
+
+
+        <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter Your Phone Number" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter Your Email Address" required>
+        </div>
+        <div class="form-group">
+            <label for="verification-id-front">Verification ID (Upload Front):</label>
+            <input type="file" id="verification-id-front" name="verification-id-front"  accept=".pdf,.doc,.docx"><br><br>
+            <label for="verification-id-back">Verification ID (Upload Back):</label>
+            <input type="file" id="verification-id-back" name="verification-id-back" accept=".pdf,.doc,.docx">
+        </div>
+        <div class="form-group">
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" placeholder="Enter Your Full Address Here" required></textarea>
+        </div>
+        <div class="form-group">
+            <label>Classes Taught Before:</label><br>
+            <input type="checkbox" id="class-1-5" name="classes-taught-before[]" value="1-5">
+            <label class="text-label" for="class-1-5">1-5</label><br>
+            <input type="checkbox" id="class-6-8" name="classes-taught-before[]" value="6-8">
+            <label class="text-label" for="class-6-8">6-8</label><br>
+            <input type="checkbox" id="class-9-10" name="classes-taught-before[]" value="9-10">
+            <label class="text-label" for="class-9-10">9-10</label><br>
+            <input type="checkbox" id="class-11-12" name="classes-taught-before[]" value="11-12">
+            <label class="text-label" for="class-11-12">11-12</label><br>
+            <input type="checkbox" id="class-not-taught" name="classes-taught-before[]" value="not-taught">
+            <label class="text-label" for="class-not-taught">Not Taught Any Classes Before</label>
+        </div>
+        <div class="form-group">
+            <label>Classes Can Teach:</label><br>
+            <input  type="checkbox" id="teach-1-5" name="classes-can-teach[]" value="1-5">
+            <label class="text-label" for="teach-1-5">1-5 (All Subjects)</label><br>
+            <input type="checkbox" id="teach-6-8" name="classes-can-teach[]" value="6-8">
+            <label class="text-label" for="teach-6-8">6-8 (All Subjects)</label><br>
+            <input type="checkbox" id="teach-9-10-english" name="classes-can-teach[]" value="9-10-english">
+            <label class="text-label" for="teach-9-10-english">9-10 (English)</label><br>
+            <input type="checkbox" id="teach-9-10-maths-science" name="classes-can-teach[]" value="9-10-maths-science">
+            <label class="text-label" for="teach-9-10-maths-science">9-10 (Maths, Science)</label><br>
+            <input type="checkbox" id="teach-9-10-all" name="classes-can-teach[]" value="9-10-all">
+            <label class="text-label" for="teach-9-10-all">9-10 (All Subjects)</label><br>
+            <input type="checkbox" id="teach-11-12-pcm" name="classes-can-teach[]" value="11-12-pcm">
+            <label class="text-label" for="teach-11-12-pcm">11-12 (PCM)</label><br>
+            <input type="checkbox" id="teach-11-12-pcb" name="classes-can-teach[]" value="11-12-pcb">
+            <label class="text-label" for="teach-11-12-pcb">11-12 (PCB)</label><br>
+            <input type="checkbox" id="teach-11-12-commerce" name="classes-can-teach[]" value="11-12-commerce">
+            <label class="text-label" for="teach-11-12-commerce">11-12 (Commerce)</label><br>
+            <input type="checkbox" id="teach-11-12-arts" name="classes-can-teach[]" value="11-12-arts">
+            <label class="text-label" for="teach-11-12-arts">11-12 (Arts)</label>
+        </div>
+        <div class="form-group">
+            <label for="past-work-experience">Past Work Experience:</label>
+            <textarea id="past-work-experience" placeholder="Any Past Experience if not Enter No Experience" name="past-work-experience"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="time-frame">Time Frame:</label>
+            <input type="text" id="time-frame" placeholder="Like: 4:00 PM - 7:00 PM" name="time-frame" required>
+        </div>
+        <div class="form-group">
+            <div class="card-group">
+                <label>Mode of Teaching:</label><br>
+                <input type="radio" id="online" name="mode-of-teaching" value="online" required>
+                <label class="card-label" for="online">
+                    <div class="card">
+                        <div class="card-content">
+                            <img src=".././photos_2/online.jpg" alt="Online" class="card-image">
+                            Online
+                        </div>
+                    </div>
+                </label>
+                <input type="radio" id="offline" name="mode-of-teaching" value="offline" required>
+                <label class="card-label" for="offline">
+                    <div class="card">
+                        <div class="card-content">
+                            <img src=".././photos_2/classroom.avif" alt="Bus" class="card-image">
+                            Offline
+                        </div>
+                    </div>
+                </label>
+            </div>
+        </div>
+        
+        <div class="form-group" id="transportation-group" style="display: none;">
+            <label>Mode of Transportation:</label><br>
+            <div class="card-group">
+                <input type="radio" id="2-wheeler" name="mode-of-transportation" value="2-wheeler" >
+                <label class="card-label" for="2-wheeler">
+                    <div class="card">
+                        <div class="card-content">
+                            <img src=".././photos_2/2-wheeler.webp" alt="2-Wheeler" class="card-image">
+                            2-Wheeler
+                        </div>
+                    </div>
+                </label>
+        
+                <input type="radio" id="4-wheeler" name="mode-of-transportation" value="4-wheeler" >
+                <label class="card-label" for="4-wheeler">
+                    <div class="card">
+                        <div class="card-content">
+                            <img src=".././photos_2/car.webp" alt="4-Wheeler" class="card-image">
+                            4-Wheeler
+                        </div>
+                    </div>
+                </label>
+        
+                <input type="radio" id="metro" name="mode-of-transportation" value="metro" >
+                <label class="card-label" for="metro">
+                    <div class="card">
+                        <div class="card-content">
+                            <img src=".././photos_2/metro_2.webp" alt="Metro" class="card-image">
+                            Metro
+                        </div>
+                    </div>
+                </label>
+        
+                <input type="radio" id="bus" name="mode-of-transportation" value="bus" >
+                <label class="card-label" for="bus">
+                    <div class="card">
+                        <div class="card-content">
+                            <img src=".././photos_2/bus.webp" alt="Bus" class="card-image">
+                            Bus
+                        </div>
+                    </div>
+                </label>
+            </div>
+        </div>
+        
+        <div class="form-group" id="distance-group" style="display: none;">
+            <label for="distance">Distance Willing to Travel:</label>
+            <input type="text" id="distance" name="distance"placeholder="Like : 5km from dwarka mor metro " >
+        </div>
+        
+
+        <div class="form-group">
+            <label for="fees">Expected Fees (per hour or monthly rate):</label>
+            <input type="text" id="fees" name="fees" placeholder="Mention Per Month or Per Hour also" required>
+        </div>
+        <div class="form-group">
+            <label for="resume">Add Your Resume</label>
+            <input type="file" id="resume" name="resume"  accept=".pdf,.doc,.docx">
+        </div>
+        <button type="submit" >Submit</button>
+    </form>
+   
+    <!--<script>
+        function submitForm() {
+            // Get form data
+            const formData = new FormData(document.getElementById("registration-form"));
+            console.log(formData)
+            // Upload file to Firebase Storage
+            const file = formData.get("verification-id");
+            const storageRef = firebase.storage().ref(`verification-ids/${file.name}`);
+            const uploadTask = storageRef.put(file);
+
+            // Store form data in Firestore after file upload is complete
+            uploadTask.then((snapshot) => {
+                snapshot.ref.getDownloadURL().then((url) => {
+                    // Add form data to Firestore
+                    firebase.firestore().collection('registrations').add({
+                        name: formData.get("name"),
+                        gender: formData.get("gender"),
+                        dob: formData.get("dob"),
+                        relationship: formData.get("relationship"),
+                        phone: formData.get("phone"),
+                        email: formData.get("email"),
+                        verificationIdUrl: url,
+                        address: formData.get("address"),
+                        // Add other form fields similarly
+                    }).then(() => {
+                        // Form submitted successfully
+                        alert("Registration successful!");
+                        // Clear form fields if needed
+                        document.getElementById("registration-form").reset();
+                    }).catch((error) => {
+                        console.error("Error adding document: ", error);
+                        alert("Error submitting registration. Please try again later.");
+                    });
+                });
+            }).catch((error) => {
+                console.error("Error uploading file: ", error);
+                alert("Error uploading file. Please try again later.");
+            });
+        }
+    </script>-->
+</body>
+
+</html>
